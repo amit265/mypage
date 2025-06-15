@@ -41,7 +41,7 @@ export default function Home() {
       {/* Sections */}
       <div className="pt-16">
         <section id="hero" className="h-screen flex items-center justify-center bg-gradient-to-br from-purple-400 to-blue-500 dark:from-gray-800 dark:to-gray-700">
-          <h2 className="text-4xl font-bold">Hi, I'm Amit Kumar 👋</h2>
+          <h2 className="text-4xl font-bold">Hi, I&apos;m Amit Kumar 👋</h2>
         </section>
 
         <section id="about" className="h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-800">
@@ -88,7 +88,7 @@ export default function Home() {
         <section id="certificates" className="h-screen flex items-center justify-center bg-white dark:bg-gray-900">
           <div className="text-center">
             <h2 className="text-3xl font-semibold mb-4">Certificates</h2>
-            <p>Here I'll display some of the certificates I've earned.</p>
+            <p>Here I&apos;ll display some of the certificates I&apos;ve earned.</p>
           </div>
         </section>
 
