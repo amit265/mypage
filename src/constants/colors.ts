@@ -1,0 +1,7 @@
+export const color = {
+  BGCOLOR: "#1D2549",
+  BUTTON_PRIMARY: "#BDF347",
+  TEXT_TITLE: "#BDF347",
+  TEXT: "#FFFFFF",
+  BUTTON_SECONDARY: "#98E8CD",
+};
