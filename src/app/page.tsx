@@ -15,16 +15,16 @@ export default function Home() {
   const renderSection = () => {
     switch (activeSection) {
       case 'title': return <TitleSection onNavigate={setActiveSection} />;
-      case 'about': return <AboutSection onNavigate={setActiveSection} />;
+      case 'about': return <AboutSection />;
       case 'nav': return <NavSection onNavigate={setActiveSection} />;
-      case 'projects': return <ProjectsSection onNavigate={setActiveSection} />;
-      case 'skills': return <SkillsSection onNavigate={setActiveSection} />;
-      case 'certificates': return <CertificatesSection onNavigate={setActiveSection} />;
-      case 'contact': return <ContactSection onNavigate={setActiveSection} />;
+      case 'projects': return <ProjectsSection />;
+      case 'skills': return <SkillsSection />;
+      case 'certificates': return <CertificatesSection />;
+      case 'contact': return <ContactSection />;
       default: return <TitleSection onNavigate={setActiveSection} />;
     }
   };
-  
+
 
   return (
     <main className="relative h-screen w-screen overflow-hidden dark:bg-black bg-[#1D2549] transition-colors duration-300">
