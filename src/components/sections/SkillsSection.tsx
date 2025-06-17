@@ -1,32 +1,23 @@
-const skills = [
-    { name: 'React', level: 85 },
-    { name: 'Node.js', level: 75 },
-    { name: 'TypeScript', level: 70 },
-    { name: 'React Native', level: 80 },
-    { name: 'MongoDB', level: 70 },
-  ];
-  
-  export default function SkillsSection() {
-    return (
-      <section className="h-screen flex flex-col justify-center items-center p-6">
-        <h2 className="text-4xl font-semibold mb-6 dark:text-white">Skills</h2>
-        <div className="w-full max-w-xl space-y-4">
-          {skills.map((skill) => (
-            <div key={skill.name}>
-              <div className="flex justify-between text-sm font-medium mb-1 text-gray-700 dark:text-gray-300">
-                <span>{skill.name}</span>
-                <span>{skill.level}%</span>
-              </div>
-              <div className="w-full h-3 bg-gray-300 dark:bg-gray-700 rounded-full">
-                <div
-                  className="h-3 bg-blue-500 rounded-full"
-                  style={{ width: `${skill.level}%` }}
-                />
-              </div>
-            </div>
-          ))}
+import { skills } from "@/constants/skills";
+import SkillCard from "../SkillCard";
+
+
+export default function SkillsSection() {
+  return (
+    <section className="h-screen flex flex-row">
+      <div className="w-1/2">
+        <div className="flex gap-8 flex-col items-start mx-24 justify-center h-full">
+          <h2 className="text-2xl font-semibold mb-6 text-white">WHAT I CAN DO</h2>
+          <h2 className="text-6xl font-semibold mb-6  text-[#BDF347]">Skills & Proficiencies</h2>
+
+          <button className="text-white border border-[#BDF347] rounded-3xl px-16 py-1 top-8 right-16 cursor-pointer text-3xl">⟵</button>
         </div>
-      </section>
-    );
-  }
-  
+      </div>
+
+      <div className="w-1/2">
+        <SkillCard skills={skills} />
+
+      </div>
+    </section>
+  );
+}
