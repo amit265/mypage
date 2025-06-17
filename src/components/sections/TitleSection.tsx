@@ -6,7 +6,7 @@ export default function TitleSection({ onNavigate }: { onNavigate: (section: str
     return (
         <section className="h-screen flex flex-row items-center justify-center text-left p-4 gap-4">
 
-            <button className="text-white border border-[#BDF347] rounded-3xl px-16 py-2 absolute top-8 right-16 cursor-pointer">PORTFOLIO</button>
+            <button className="text-white border border-[#BDF347] rounded-3xl px-16 py-2 absolute top-24 right-8 cursor-pointer">PORTFOLIO</button>
             <div className="w-1/3">
                 <Image
                     src="/images/hero.png"

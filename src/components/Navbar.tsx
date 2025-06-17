@@ -2,7 +2,7 @@
 import { useState } from 'react';
 
 export default function Navbar({ onNavigate }: { onNavigate: (section: string) => void }) {
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(true);
     console.log("opened componenet", open);
 
     const menuItems = [
@@ -15,18 +15,18 @@ export default function Navbar({ onNavigate }: { onNavigate: (section: string) =
     ];
 
     return (
-        <div className="absolute top-8 right-4 z-50">
-            <button onClick={() => setOpen(!open)} className="p-2 bg-gray-800 text-white rounded cursor-pointer">
+        <div className="absolute top-4 right-4 z-50">
+            {/* <button onClick={() => setOpen(!open)} className="p-2 bg-gray-800 text-white rounded cursor-pointer">
                 ☰
-            </button>
+            </button> */}
             {open && (
-                <div className="mt-2 dark:bg-gray-900 rounded p-4 space-y-2 absolute right-0 ">
+                <div className=" dark:bg-gray-900 rounded absolute right-0 flex ">
                     {menuItems.map(item => (
                         <button
                             key={item.id}
                             onClick={() => {
                                 onNavigate(item.id);
-                                setOpen(false);
+                                // setOpen(false);
                             }}
                             className="block text-left w-full px-2 py-1 hover:bg-gray-200 hover:text-black dark:hover:bg-gray-700 rounded cursor-pointer text-white"
                         >
