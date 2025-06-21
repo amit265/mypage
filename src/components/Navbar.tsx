@@ -2,7 +2,7 @@
 import { useState } from 'react';
 
 export default function Navbar({ onNavigate }: { onNavigate: (section: string) => void }) {
-    const [open, setOpen] = useState(true);
+    const [open] = useState(true);
     console.log("opened componenet", open);
 
     const menuItems = [

@@ -1,7 +1,11 @@
 import React from 'react';
+import { Skill } from '@/constants/skills';
 
+type SkillCardProps = {
+  skills: Skill[];
+};
 
-const SkillCard = ({ skills }) => {
+const SkillCard: React.FC<SkillCardProps> = ({ skills }) => {
   return (
     <div className='flex flex-col md:flex-row flex-wrap justify-evenly items-center py-4 w-full h-full'>
       {skills.map((skill) => (
